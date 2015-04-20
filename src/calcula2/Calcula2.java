@@ -8,7 +8,6 @@ import javax.swing.JOptionPane;
  */
 public class Calcula2 {
 
-    // static final int SUMA = 0, RESTA = 1, MULTIPLICAR = 2, DIVIDIR = 3;
     /**
      * @param args the command line arguments
      */
@@ -26,17 +25,17 @@ public class Calcula2 {
         float resultado;
 
         switch (cont.getOperacion()) {
-            case "x":
-                resultado = cont.num1 + cont.num2;
+            case "+":
+                resultado = cont.getNum1() + cont.getNum2();
                 break;
             case "-":
-                resultado = cont.num1 - cont.num2;
+                resultado = cont.getNum1() - cont.getNum2();
                 break;
             case "*":
-                resultado = cont.num1 * cont.num2;
+                resultado = cont.getNum1() * cont.getNum2();
                 break;
             case "/":
-                resultado = cont.num1 / cont.num2;
+                resultado = cont.getNum1() / cont.getNum2();
                 break;
             default:
                 resultado = 0;
