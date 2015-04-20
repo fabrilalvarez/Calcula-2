@@ -7,9 +7,9 @@ package calcula2;
 public class Modelo {
 
     float num1, num2, resultado;
-    int operacion;
+    String operacion;
 
-    public int getOperacion() {
+    public String getOperacion() {
         
         return operacion;
     }

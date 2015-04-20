@@ -1,4 +1,3 @@
-
 package calcula2;
 
 import javax.swing.JOptionPane;
@@ -9,8 +8,7 @@ import javax.swing.JOptionPane;
  */
 public class Calcula2 {
 
-    static final int SUMA = 0, RESTA = 1, MULTIPLICAR = 2, DIVIDIR = 3;
-
+    // static final int SUMA = 0, RESTA = 1, MULTIPLICAR = 2, DIVIDIR = 3;
     /**
      * @param args the command line arguments
      */
@@ -18,7 +16,7 @@ public class Calcula2 {
 
         Modelo contenedor = new Modelo();
         contenedor.num1 = Float.parseFloat(JOptionPane.showInputDialog("Primer Numero"));
-        contenedor.operacion = Integer.parseInt(JOptionPane.showInputDialog("Operacion \nSUMA \nRESTA \nMULTIPLICAR \nDIVIDIR"));
+        contenedor.operacion = JOptionPane.showInputDialog("Operacion \nSUMA + \nRESTA - \nMULTIPLICAR * \nDIVIDIR /");
         contenedor.num2 = Float.parseFloat(JOptionPane.showInputDialog("Primer Numero"));
         contenedor.setResultado(realizaOP(contenedor));
         Vista.imprimir(contenedor);
@@ -28,16 +26,16 @@ public class Calcula2 {
         float resultado;
 
         switch (cont.getOperacion()) {
-            case SUMA:
+            case "x":
                 resultado = cont.num1 + cont.num2;
                 break;
-            case RESTA:
+            case "-":
                 resultado = cont.num1 - cont.num2;
                 break;
-            case MULTIPLICAR:
+            case "*":
                 resultado = cont.num1 * cont.num2;
                 break;
-            case DIVIDIR:
+            case "/":
                 resultado = cont.num1 / cont.num2;
                 break;
             default:
