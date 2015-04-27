@@ -10,7 +10,7 @@ public class Modelo {
     String operacion;
 
     public String getOperacion() {
-        
+
         return operacion;
     }
 
