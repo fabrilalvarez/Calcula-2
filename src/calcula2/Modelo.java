@@ -10,8 +10,16 @@ public class Modelo {
     String operacion;
 
     public String getOperacion() {
-
         return operacion;
+    }
+
+    public Modelo() {
+    }
+
+    public Modelo(float num1, float num2, String operacion) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.operacion = operacion;
     }
 
     public float getNum1() {
